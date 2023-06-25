@@ -1,0 +1,69 @@
+<html>
+
+ <head>
+
+
+
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" href="static/styles.css">
+
+</head>
+
+<body>
+
+
+
+<header>
+
+
+
+<div class="container">
+
+
+
+
+
+<div id="brandname">
+
+Spam Detector App using NLP
+
+
+
+</div>
+
+
+
+
+
+<h2>Spam Detector For SMS</h2>
+
+
+</div>
+
+</header>
+
+
+
+<div class="ml-container">
+
+<form action="{{ url_for('predict')}}" method="POST">
+
+<p>Enter Your SmS Here which you want to predict Spam or Ham</p>
+
+
+<textarea name="message" rows="6" cols="50"></textarea>
+
+
+<br/>
+
+<input type="submit" class="btn-info" value="Predict">
+</form>
+</div>
+</body>
+<footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright">CopyRightAB</p>
+    </div>
+</footer>
+</html>
